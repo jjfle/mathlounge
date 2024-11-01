@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Math Lounge</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a> 
+    <a href="#polls" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Polls</a> 
+    <a href="#Game-Based Learning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game-Based Learning</a> 
+    <a href="#Mathematical Tools" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mathematical Tools</a> 
+    <a href="#Mathematics Digital Languages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mathematics Digital Languages</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="overview">
+    <h1 class="w3-jumbo"><b>Math Lounge</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Overview.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The Math Lounge is the schools local resource for accessing and remaining informed 
+    with the digital tools and platforms used by the mathematics department. </p>
+    <p>Digital literacy is an important skillset for students to develop even in mathematics. 
+      It allows students to better engage the content and develops students perception of technology as a tool for completing challenging tasks. <br>
+     </p>
+    <p>Just select the resource you wish to view from the sidebar on the left to get started.</p>
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div style="text-align: center;">
+      <img src="https://github.com/jjfle/mathzone/blob/main/studying-tools.jpg?raw=true" style="width:60%" >
+    </div>
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- polls -->
+  <div class="w3-container" id="polls" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Polls.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The use of live interactive polls is a powerful tool for enabling hands-on learning in the classroom. <br>It is not only valuable for learning, but also can be used as a method of formative assessment.</p>
+
+    <p>FLUX is a powerful tool for creating polls for classrooms. It engages students with the content of the class through: word clouds, media polls or free test response prompts and responses. <br>
+      The polls are easily shared between others, allowing for consistent learning experiences across classes. Students can contribute to the polls using their devices, and quickly provide insights or gain feedback to problems.
+      <br>
+      Students can easily join the session using the generated code for each room.
+    </p>
+    <p>To sign in as an intructor click the button below:</p>
+    <div style="margin-left: 40%;margin-right: 40%;">
+      <a href = 'https://flux.qa/info/features/' class="w3-blue w3-button w3-block w3-padding-large">FLUX</a>
+    </div>
+    
+  </div>
+  
+  <!-- Game-Based Learning -->
+  <div class="w3-container" id="Game-Based Learning" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Game-Based Learning.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Gamification is the process of implementing game-like elements within the classroom to motivate and engage students in activities.</p>
+    <p>Blooket reimagines learning by gamifying quizzes and trivia. As the teacher you can create or choose an existing set of questions related to the content you are covering in class as well as a game mode. <br>
+      Students can then join the session using their devices via a generated code.
+    </p>
+    <p>Blooket has been shown to enhance students' motivation in learning, due to being a fun, competitive and by promoting understanding of content.</p>
+    <p>To sign in as an intructor click the button below:</p>
+    <div style="margin-left: 40%;margin-right: 40%;">
+      <a href = 'https://www.blooket.com' class="w3-blue w3-button w3-block w3-padding-large">Blooket</a>
+    </div>
+  </div>
+
+  <!-- The Team -->
+  <!--<div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- Mathematical Tools  -->
+  <div class="w3-container" id="Mathematical Tools" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Mathematical Tools.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Mathematical tools are powerful in aiding in students development of understanding. The ability to visualise and interact with problems helps students engage with the material.</p>
+    <p>Geogebra is a platform that combines the capabilities of a graphics calculator and the resources of textbook. <br>
+      Geogebra's calculator allows students to plot and visualise functions in both 2-dimensions and 3-dimensions,
+      create, analyse and annotate geometric figures, access a CAS calculator, and analyse and visualise various probability distributions. <br>
+      Geogebra's math practice feature guides students through the steps or methods to solve routine problems such as arithmetic, equation solving and simplifying expressions. <br>
+      Geogebra also allow students to join lessons and collaborate with one another to solve challenging problems or to share observations and insights.
+    </p>
+    <p>Geogebra has been shown to benefit students mathematics within the classroom.</p>
+    <p>To access the resource click the button below:</p>
+    <div style="margin-left: 40%;margin-right: 40%;">
+      <a href = 'https://www.geogebra.org' class="w3-blue w3-button w3-block w3-padding-large">Geogebra</a>
+    </div>
+  </div>
+ <!--
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-blue w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-blue w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>-->
+  
+  <!-- Mathematics Digital Languages -->
+  <div class="w3-container" id="Mathematics Digital Languages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Mathematics Digital Languages.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Many students often find mathematics to be a written language that doesn't mesh well the digital world. For students with poor handwriting it can make maths difficult to engage with, in terms of completing work.<br>
+      There are also many students that wish to write digital summaries or implement mathematical notation into other subjects that benefit from digital write-ups, often struggle to do so.</p>
+    <p>LaTeX is a well known language which excels at displaying mathematical notation using simple commands. Overleaf - an online LaTeX editor - combines the skills related to code and visual editting into a single experience, 
+      while allowing for multiple users to collaborate on the same document. <br>
+    As such students can sharpen multiple skills simultaneously.</p>
+    <p>As teachers, the use of LaTeX also assists us in developing accessible notes or documentation for students, particularly for assistive technologies such as screen readers.</p>
+    <p>Within the later years of high school, students have shown few difficulties learning LaTeX, with most eager to implement it in lab reports and homework, as such the skills can be applied across multiple subjects.
+      <br>For students pursuing tertiary education, being capable of understanding and using LaTeX is very beneficial for assignments and online discussion, making the skillset useful beyond the classroom.
+    </p>
+    <p>To access the resource click the button below:</p>
+    <div style="margin-left: 40%;margin-right: 40%;">
+      <a href = 'https://www.overleaf.com' class="w3-blue w3-button w3-block w3-padding-large">Overleaf</a>
+    </div>
+  </div>
+    <!--
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>-->
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
